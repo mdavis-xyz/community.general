@@ -55,6 +55,7 @@ notes:
     - Requires tarfile, zipfile, gzip and bzip2 packages on target host.
     - Requires lzma or backports.lzma if using xz format.
     - Can produce I(gzip), I(bzip2), I(lzma) and I(zip) compressed files or archives.
+    - The C(changed) boolean in the variable registered by this task can sometimes report no change when there was a change.
 seealso:
 - module: ansible.builtin.unarchive
 author:
